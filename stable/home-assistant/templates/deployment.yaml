@@ -152,6 +152,12 @@ spec:
             fsGroup: {{ .Values.fsGroup }}
           {{- end }}
           {{- end }}
+          {{- if .Values.capabilities }}
+            capabilities:
+            {{- range .Values.capabilities }}
+              - {{ . }}
+            {{- end}}
+          {{- end }}
           {{- end }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}

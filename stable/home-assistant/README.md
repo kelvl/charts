@@ -66,6 +66,7 @@ The following tables lists the configurable parameters of the Home Assistant cha
 | `service.publishNotReadyAddresses`   | Set to true if the editors (vscode or configurator) should be reachable when home assistant does not run | `false` |
 | `service.externalTrafficPolicy`   | Loadbalancer externalTrafficPolicy | `` |
 | `hostNetwork`              | Enable hostNetwork - might be needed for discovery to work | `false` |
+| `capabilities`             | Add capabilities to the home-assistant container - useful for using USB Bluetooth dongles without hostNetwork | `[]` |
 | `service.nodePort`   | nodePort to listen on for the home-assistant GUI | `` |
 | `ingress.enabled`              | Enables Ingress | `false` |
 | `ingress.annotations`          | Ingress annotations | `{}` |
